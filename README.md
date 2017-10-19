@@ -20,7 +20,7 @@ const clientID      = //<YOUR_CLIENT_ID>;
 const serverPort    = 3000;
 ```
 
-For help on how to determin the values for these variables, read about the [Project Setup](https://docs.microsoft.com/azure/active-directory/develop/active-directory-devquickstarts-webapi-nodejs#create-the-sample-project) in the accompanying article.
+For help on how to determine the values for these variables, read about the [Project Setup](https://docs.microsoft.com/azure/active-directory/develop/active-directory-devquickstarts-webapi-nodejs#create-the-sample-project) in the accompanying article.
 
 ## Run the sample
 Once configuration is complete, then install the dependencies and start the project.
@@ -51,7 +51,7 @@ Try: curl -isS -X GET http://127.0.0.1:3000/api
 ```
 
 ## Test a secured end point
-To test a secured route, enter the folling into a bash shell:
+To test a secured route, enter the following into a bash shell:
 
 ```Shell
 curl -isS -X GET http://127.0.0.1:3000/api
