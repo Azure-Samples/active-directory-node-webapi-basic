@@ -1,9 +1,3 @@
----
-services: active-directory
-platforms: nodejs
-author: craigshoemaker
----
-
 # Securing a Node.js REST-based Application with Azure Active Directory
 
 This sample demonstrates how to secure a [Restify](http://restify.com/) API endpoint with [Passport](http://passportjs.org/) using the [passport-azure-ad](https://github.com/AzureAD/passport-azure-ad) module to handle communication with Azure Active Directory (AAD). 
