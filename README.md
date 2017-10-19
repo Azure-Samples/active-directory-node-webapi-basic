@@ -12,7 +12,7 @@ Before you can connect to Azure Active Directory, you need the following informa
 | Tenant Name  | [Tenant name](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant) you want to use for authentication | `tenantName`  |
 | Client ID  | Client ID is the OAuth term used for the AAD _Application ID_. |  `clientID`  |
 
-Once you have cloned the repository open `config.js` you must add your values for tenant name and client ID in the following code:
+Once you have cloned the repository, open `config.js` and add your values for tenant name and client ID in the following code:
 
 ```JavaScript
 const tenantName    = //<YOUR_TENANT_NAME>;
