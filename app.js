@@ -11,13 +11,18 @@ const
 ;
 
 const authenticationStrategy = new BearerStrategy(config.credentials, (token, done) => {
-    let userToken = authenticatedUserTokens.find((user) => user.sub === token.sub);
+    let currentUser = null;
+
+    let userToken = authenticatedUserTokens.find((user) => {
+        currentUser = user;
+        user.sub === token.sub;
+    });
 
     if(!userToken) {
         authenticatedUserTokens.push(token);
     }
 
-    return done(null, user, token);
+    return done(null, currentUser, token);
 });
 
 passport.use(authenticationStrategy);
